@@ -11,7 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^14.15.3",
-    "drizzle-orm": "^0.33.0"
+    "drizzle-orm": "^0.33.0",
+    "poru": "^5.2.0"
   },
   "devDependencies": {
     "@types/node": "^22.5.0",
