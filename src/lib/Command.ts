@@ -20,7 +20,7 @@ interface BaseCommandOptions<T extends ApplicationCommandType> {
 interface ChatInputCommandOptions extends BaseCommandOptions<ApplicationCommandType.ChatInput> {
     description: string
     type: ApplicationCommandType.ChatInput
-    options: ApplicationCommandOptionData[]
+    options?: ApplicationCommandOptionData[]
 
     autoComplete?: (interaction: AutocompleteInteraction) => Promise<void>
 }
