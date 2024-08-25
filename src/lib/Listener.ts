@@ -1,6 +1,6 @@
 import type { ClientEvents } from "discord.js";
 
-interface ListnerOptions<E extends keyof ClientEvents = keyof ClientEvents> {
+interface ListnerOptions<E extends keyof ClientEvents> {
     name: string;
     event: keyof ClientEvents;
     once?: boolean;
@@ -8,7 +8,7 @@ interface ListnerOptions<E extends keyof ClientEvents = keyof ClientEvents> {
     callback: (...args: ClientEvents[E]) => Promise<void>
 }
 
-export class Listener<E extends keyof ClientEvents> {
+export class Listener<E extends keyof ClientEvents = keyof ClientEvents> {
     public name: string;
     public event: keyof ClientEvents;
     public once?: boolean;
