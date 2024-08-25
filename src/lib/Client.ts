@@ -1,4 +1,5 @@
 import type { Command, Listener } from "@lib";
+import { handleCommands } from "@utils";
 import { Client, Collection, type ClientOptions } from "discord.js";
 import { Poru, type NodeGroup, type PoruOptions } from "poru"
 
@@ -20,6 +21,13 @@ export class HyperionClient<Ready extends boolean = boolean> extends Client<Read
         this.commands = opts.commands
         this.listeners = opts.listeners
         this.manager = new Poru(this, opts.poruNodes, opts.poruOptions)
+    }
+
+    public override async login(token?: string): Promise<string> {
+        const promiseString = await super.login(token)
+        await handleCommands("commands", this)
+        
+        return promiseString
     }
 }
 
