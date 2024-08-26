@@ -1,1 +1,1 @@
-export * from "./handleCommands"
+export * from "./handleCommands";
