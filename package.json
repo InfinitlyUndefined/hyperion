@@ -5,7 +5,9 @@
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
-    "dev": "tsup && node ."
+    "dev": "tsup && node .",
+    "build": "tsup",
+    "run": "node ."
   },
   "keywords": [],
   "author": "",

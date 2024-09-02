@@ -1,6 +1,5 @@
 import { HyperionClient } from "@lib";
 import { Collection, GatewayIntentBits } from "discord.js";
-import "dotenv/config";
 
 const { PORU_HOST, PORU_NAME, PORU_PASS, PORU_PORT } = process.env;
 
@@ -21,6 +20,8 @@ const client = new HyperionClient({
 	],
 	poruOptions: {
 		library: "discord.js",
+		reconnectTries: Number.POSITIVE_INFINITY,
+		reconnectTimeout: 5,
 	},
 });
 
