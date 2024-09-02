@@ -5,6 +5,7 @@ export default new Command({
 	type: ApplicationCommandType.ChatInput,
 	name: "stop",
 	description: "Stop the music",
+	guildIds: ["1241910348487987230"],
 
 	async callback(interaction) {
 		const { client, guild } = interaction;
