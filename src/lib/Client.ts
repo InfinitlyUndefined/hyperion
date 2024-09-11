@@ -1,7 +1,7 @@
 import type { Command, Listener } from "@lib";
 import { getCommands, registerCommands } from "@utils";
-import { Client, type Collection, type ClientOptions } from "discord.js";
-import { Poru, type NodeGroup, type PoruOptions } from "poru";
+import { Client, type ClientOptions, type Collection } from "discord.js";
+import { type NodeGroup, Poru, type PoruOptions } from "poru";
 import { handleListeners } from "../utils/handleListeners";
 
 interface HyperionClientOptions extends ClientOptions {

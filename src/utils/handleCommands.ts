@@ -1,7 +1,7 @@
-import type { Command, HyperionClient } from "@lib";
-import type { ApplicationCommandData } from "discord.js";
 import { readdirSync } from "node:fs";
 import { resolve } from "node:path";
+import type { Command, HyperionClient } from "@lib";
+import type { ApplicationCommandData } from "discord.js";
 
 async function checkCommand(
 	command: ApplicationCommandData,

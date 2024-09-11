@@ -8,22 +8,24 @@
 		"dev": "tsup && node .",
 		"build:bot": "tsup",
 		"build:docker": "podman build . -t hyperion-bot:latest",
-		"run": "node ."
+		"run": "node .",
+		"lint": "biome check --write ./src/**/*.ts"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"discord.js": "^14.15.3",
+		"discord.js": "^14.16.1",
 		"drizzle-orm": "^0.33.0",
 		"poru": "^5.2.0",
 		"winston": "^3.14.2"
 	},
 	"devDependencies": {
-		"@types/node": "^22.5.0",
+		"@biomejs/biome": "^1.8.3",
+		"@types/node": "^22.5.4",
 		"dotenv": "^16.4.5",
-		"drizzle-kit": "^0.24.1",
+		"drizzle-kit": "^0.24.2",
 		"tsup": "^8.2.4",
-		"typescript": "^5.5.4"
+		"typescript": "^5.6.2"
 	}
 }

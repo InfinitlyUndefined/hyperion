@@ -1,11 +1,11 @@
 import {
+	type ApplicationCommandOptionData,
 	ApplicationCommandType,
 	type AutocompleteInteraction,
 	type ChatInputCommandInteraction,
 	type MessageContextMenuCommandInteraction,
-	type UserContextMenuCommandInteraction,
-	type ApplicationCommandOptionData,
 	type PermissionResolvable,
+	type UserContextMenuCommandInteraction,
 } from "discord.js";
 
 type RunType = {

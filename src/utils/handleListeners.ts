@@ -1,6 +1,6 @@
-import type { HyperionClient, Listener } from "@lib";
 import { readdirSync } from "node:fs";
 import { resolve } from "node:path";
+import type { HyperionClient, Listener } from "@lib";
 
 export async function handleListeners(
 	path: string,
