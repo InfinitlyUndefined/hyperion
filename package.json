@@ -5,7 +5,7 @@
 	"main": "dist/index.js",
 	"type": "module",
 	"scripts": {
-		"dev": "tsup && node .",
+		"dev": "tsup && bun .",
 		"build:bot": "tsup",
 		"build:docker": "podman build . -t hyperion-bot:latest",
 		"run": "node .",
