@@ -2,3 +2,4 @@ node_modules
 lavalink
 .env
 dist
+.yarn
